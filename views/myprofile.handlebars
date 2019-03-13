@@ -2,15 +2,18 @@
 <html>
 
 <head>
+	<title>Mentor</title>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://bootswatch.com/4/simplex/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/myprofileCSS.css"/>
+	<link rel="stylesheet" href="css/navbar.css">
+	<link rel="stylesheet" href="css/top-navbar.css">
+
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lora" />
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-
 
 
 	<!-- Google Analytics Content Experiment code -->
@@ -30,6 +33,18 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 </head>
 
 <body>
+
+    <div class="topnav">
+        <p>My Profile</p>
+<!--         <a href="/" class="logout" id="logout"> Log out
+		</a> -->
+
+		<button onclick = "location.href='/'" class="logout" id="logout"> Log out </button>
+    </div> 
+
+    <br><br><br>
+
+
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -40,18 +55,12 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 							<div class="d-flex justify-content-start">
 								<div class="image-container">
 									<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqPgOH0njEY3NvX_8SkzJdA73JPgl-H97HXJJCR1yIOqpjX_zdfg" id="imgProfile" style="width: 200px; height: 250px" class="img-thumbnail" />
-
 								</div>
 								<div class="userData ml-3">
-									<h2 class="d-block" style="font-size: 1.5rem; font-weight: bold">Jenny Doe</a></h>
-
-									</div>
-
+									<h2 class="d-block" style="font-size: 1.5rem; font-weight: bold">Jenny Doe</a></h2>
 								</div>
 							</div>
-
-
-
+						</div>
 
 
 							<div class="row">
@@ -110,30 +119,17 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 								</div>
 
 							</div>
-
-</div>
-<hr />
-
-</div>
-
-</div>
-</div>
+						</div> <hr />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 
 </div>
 
-
-</div>
-
-
-</div>
-
-<div class="icon-bar">
-	<a href="/search"><i class="fa fa-search"></i></a>
-	<a href="/messages"><i class="fa fa-commenting-o"></i></a>
-	<a class="active" href="/myprofile"><i class="fa fa-user-circle"></i></a>
-</div>
 
 
 <script>
@@ -163,6 +159,14 @@ window.onclick = function(event) {
 	}
 }
 </script>	
+
+<div class="icon-bar">
+	<a href=/home><i class="fa fa-home"></i></a>
+	<a href="/search"><i class="fa fa-search"></i></a>
+	<a href="/messages"><i class="fa fa-commenting-o"></i></a>
+	<a class="active" href="/myprofile"><i class="fa fa-user-circle"></i></a>
+</div>
+
 </body>
 
 

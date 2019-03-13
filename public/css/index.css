@@ -1,15 +1,16 @@
 
 html {
-  background-color: #56baed;
+  background-color: #8E4444;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: Lora;
   height: 100vh;
 }
 
 a {
-  color: #92badd;
+  color: #8e4343;
   display:inline-block;
   text-decoration: none;
   font-weight: 400;
@@ -17,20 +18,13 @@ a {
 }
 
 h1 {
-  
-
-    font-size: 100px;
-    font-family: arial, sans-serif;
+    font-size: 180px;
+    font-family: impact;
     font-weight: normal;
-    text-transform: uppercase;
     position: fixed;
     text-align: center;
-    margin: 300px 5px 10px 255px;
+    margin: 250px 5px 10px 225px;
     color: #f8f9fa;
-
-
-
-
 }
 
 
@@ -45,6 +39,14 @@ h1 {
   width: 100%;
   min-height: 100%;
   padding: 20px;
+}
+
+.wrapper p {
+  font-size: 16px;
+}
+
+.facebookLogin{
+  data-size: medium;
 }
 
 #formContent {
@@ -89,7 +91,7 @@ h2.active {
 /* FORM TYPOGRAPHY*/
 
 input[type=button], input[type=submit], input[type=reset]  {
-  background-color: #56baed;
+  background-color: #8E4444;
   border: none;
   color: white;
   padding: 15px 80px;
@@ -111,7 +113,7 @@ input[type=button], input[type=submit], input[type=reset]  {
 }
 
 input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
-  background-color: #39ace7;
+  background-color: #8E4444;
 }
 
 input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {

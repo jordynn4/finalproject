@@ -1,0 +1,56 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #8E4444;
+  overflow: hidden;
+  height:60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0px;
+  z-index: 500;
+}
+
+/* Style the words inside the navigation bar */
+.topnav p {
+  float: center;
+  color: #f2f2f2;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: Lora;
+  margin-top: 2px;
+  text-align: center;
+}
+
+.logout {
+    position: absolute;
+    color: white;
+    line-height: 30px;
+    top: 0;
+    z-index: 6;
+    font-size: 16px;
+    font-family: Lora;
+    margin-top: 13px;
+    margin-left: 290px;
+
+    background-color: #985555;
+    border: 2px 
+    border-color: black;
+    border-radius: 5px;
+    padding: 0.5px 4px;
+}
+
+.btn-back {
+    position: absolute;
+    color: #f2f2f2;
+    line-height: 50px;
+    top: 0;
+    left: 10px;
+    z-index: 6;
+    font-size: 32px;
+    font-family: Lora;
+    margin-top: 3px;
+    float: left;
+}
+
+

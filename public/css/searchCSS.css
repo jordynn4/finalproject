@@ -75,38 +75,38 @@
 
 
 
-
-
-
-
-
-
-
-/* Navigation Bar */
-.icon-bar {
-  width: 100%; /* Full-width */
-  background-color: #424949; /* Dark-grey background */
-  overflow: hidden; /* Overflow due to float */
-  bottom: 0;
-  position: fixed;
-  margin-left:0px;
-  height: 75px;
+.helpr-section {
+    
+    background: #f6f6f6 url('https://png.pngtree.com/element_origin_min_pic/16/10/03/2057f253a700aac.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 70;
+    
 }
 
-.icon-bar a {
-  float: left; /* Float links side by side */
-  text-align: center; /* Center-align text */
-  width: 33%; /* Equal width (3 icons with 33% width each = 100%) */
-  padding: 12px 0; /* Some top and bottom padding */
-  transition: all 0.3s ease; /* Add transition for hover effects */
-  color: white; /* White text color */
-  font-size: 36px; /* Increased font size */
+
+
+.helpr-title {
+    padding: 100px 0 85px;
+    font-size: 40px;
+    line-height: 20px;
+    -webkit-text-shadow: 0 4px 6px rgba(0,0,0,.20);
+    -moz-text-shadow: 0 4px 6px rgba(0,0,0,.20);
+    text-shadow: 0 4px 6px rgba(0,0,0,.20);
+    font-family: 'Lora', sans-serif;
+    text-align: center;
+    color: #555;
+    margin: 0;
+    position: relative;
 }
 
-.icon-bar a:hover {
-  background-color: black; /* Add a hover color */
+.helpr-text {
+    height: 690px;
 }
 
-.active {
-  background-color: #2874A6; /* Add an active/current color */
-}
+
+
+
+
+
+

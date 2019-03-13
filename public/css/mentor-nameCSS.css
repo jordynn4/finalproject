@@ -1,6 +1,7 @@
-body{
-    padding-top: 50px;
+body .container{
+    padding-top: 20px;
     padding-bottom: 50px;
+    font-family: Lora;
   }
 
 /*Back button */
@@ -18,7 +19,7 @@ a:hover {
 .previous {
   background-color: #2874A6;
   color: white;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: Lora;
 }
 
 
@@ -84,6 +85,7 @@ input[type=button] {
   bottom: 80px;
   right: 5px;
   width: 250px;
+  font-family: Lora;
 }
 
 /* The popup chat - hidden by default */
@@ -95,6 +97,7 @@ input[type=button] {
   border: 3px solid #f1f1f1;
   z-index: 9;
   width: 250px;
+  font-family: Lora;
 }
 
 /* Add styles to the form container */
@@ -123,7 +126,7 @@ input[type=button] {
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-  background-color: #4CAF50;
+  background-color: #565758;
   color: white;
   padding: 16px 20px;
   border: none;
@@ -135,7 +138,7 @@ input[type=button] {
 
 /* Add a red background color to the cancel button */
 .form-container .cancel {
-  background-color: red;
+  background-color: #8E4444;
 }
 
 /* Add some hover effects to buttons */
@@ -192,33 +195,4 @@ input[type=button] {
 }
 /* END SNACKBAR MESSAGE */
 
-
-/* Navigation Bar */
-.icon-bar {
-  width: 100%; /* Full-width */
-  background-color: #424949; /* Dark-grey background */
-  overflow: hidden; /* Overflow due to float */
-  bottom: 0;
-  position: fixed;
-  margin-left:0px;
-  height: 75px;
-}
-
-.icon-bar a {
-  float: left; /* Float links side by side */
-  text-align: center; /* Center-align text */
-  width: 33%; /* Equal width (3 icons with 33% width each = 100%) */
-  padding: 12px 0; /* Some top and bottom padding */
-  transition: all 0.3s ease; /* Add transition for hover effects */
-  color: white; /* White text color */
-  font-size: 36px; /* Increased font size */
-}
-
-.icon-bar a:hover {
-  background-color: black; /* Add a hover color */
-}
-
-.active {
-  background-color: #2874A6; /* Add an active/current color */
-}
 

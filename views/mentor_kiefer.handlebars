@@ -2,12 +2,18 @@
 <html>
 
 <head>
+	<title>Mentor</title>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://bootswatch.com/4/simplex/bootstrap.min.css"/>
 
 	<link rel="stylesheet" href="/css/mentor-nameCSS.css"/>
+	<link rel="stylesheet" href="/css/navbar.css">
+	<link rel="stylesheet" href="/css/top-navbar.css">
+
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lora" />
+	
 	<script src="/js/mentor-nameJS.js"></script>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,10 +44,14 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 </head>
 
 <body>
-	<div class="container">
-		<div class="back">
-			<a href="/searchresults/page_A" class="previous">&laquo; Back</a>
-		</div>		
+	<div class="topnav">
+		<button onclick = "location.href='/searchresults'" class="btn-back" id="back"> < </button>
+        <p>Mentor Profile</p>
+    </div>		
+
+    <br><br><br>
+    
+	<div class="container">	
 		<div class="row">
 			<div class="col-12">
 				<div class="card">
@@ -50,7 +60,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 						<div class="card-title mb-4">
 							<div class="d-flex justify-content-start">
 								<div class="image-container">
-									<img src="https://www.picmonkey.com/blog/wp-content/uploads/2016/11/1-intro-photo-final.jpg" id="imgProfile" style="width: 200px; height: 200px" class="responsive" />
+									<img src="https://parkcitycf.org/morelliawardees/fiveash1-2/" id="imgProfile" style="width: 200px; height: 200px" class="responsive" />
 
 								</div>
 								<div class="userData ml-3">
@@ -130,6 +140,8 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
 </div>
 
+<br><br>
+
 <button class="open-button" onclick="openForm()">Connect Me!</button>
 <div class="chat-popup" id="myForm">
 	<form onsubmit="whateverFunction(); return false;" class="form-container">
@@ -138,7 +150,8 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 		<label for="msg"><b>Message</b></label>
 		<textarea placeholder="Type message.." name="msg" required></textarea>
 
-		<button type="submit" class="btn" onclick="myFunction()">Send</button>
+		<button type="submit" class="btn" id="send" onclick="myFunction()">Send</button>
+		
 		<div id="snackbar">Your message was sent!</div>
 
 		<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
@@ -148,6 +161,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 </div>
 
 <div class="icon-bar">
+	<a href=/home><i class="fa fa-home"></i></a>
 	<a href="/search"><i class="fa fa-search"></i></a>
 	<a href="/messages"><i class="fa fa-commenting-o"></i></a>
 	<a class="active" href="/myprofile"><i class="fa fa-user-circle"></i></a>

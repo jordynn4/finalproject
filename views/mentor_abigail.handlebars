@@ -2,6 +2,7 @@
 <html>
 
 <head>
+	<title>Mentor</title>
 	
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -9,6 +10,11 @@
 	<link rel="stylesheet" href="https://bootswatch.com/4/simplex/bootstrap.min.css"/>
 
 	<link rel="stylesheet" href="/css/mentor-nameCSS.css"/>
+	<link rel="stylesheet" href="/css/navbar.css">
+	<link rel="stylesheet" href="/css/top-navbar.css">
+
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lora" />
+
 	<script src="/js/mentor-nameJS.js"></script>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,10 +46,15 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 </head>
 
 <body>
+	<div class="topnav">
+		<button onclick = "location.href='/searchresults'" class="btn-back" id="back"> < </button>
+        <p>Mentor Profile</p>
+    </div>	
+
+    <br><br><br>
+
 	<div class="container">
-		<div class="back">
-			<a href="/searchresults/page_A" class="previous">&laquo; Back</a>
-		</div>
+
 		<div class="row">
 			<div class="col-12">
 				<div class="card">
@@ -52,7 +63,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 						<div class="card-title mb-4">
 							<div class="d-flex justify-content-start">
 								<div class="image-container">
-									<img src="https://d3n8a8pro7vhmx.cloudfront.net/nationalparty/pages/5244/attachments/original/1520903034/20._Dowie_Sarah.png?1520903034" id="imgProfile" style="width: 200px; height: 200px" class="img-thumbnail" class="responsive"/>
+									<img src="https://wealth.bmoharris.com/media/banker_photo/Suzie-Eyrich.jpg.375x375_q99_box-0%2C0%2C2400%2C2400_crop_detail.jpg" id="imgProfile" style="width: 200px; height: 200px" class="img-thumbnail" class="responsive"/>
 
 								</div>
 								<div class="userData ml-3">
@@ -92,7 +103,8 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 									<label style="font-weight:bold;">About Me</label>
 								</div>
 								<div class="col-md-8 col-6">
-									I graduated from Harvard University and my dream since I was a little girl was to be a Computer Systems Analyst.
+									I graduated from Harvard University and since I was a little girl, my dream was to work with computers.
+									<br>
 								</div>
 							</div>
 							<hr />
@@ -132,6 +144,8 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
 </div>
 
+<br><br>
+
 <button class="open-button" onclick="openForm()">Connect Me!</button>
 <div class="chat-popup" id="myForm">
 	<form onsubmit="whateverFunction(); return false;" class="form-container">
@@ -140,7 +154,8 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 		<label for="msg"><b>Message</b></label>
 		<textarea placeholder="Type message.." name="msg" required></textarea>
 
-		<button type="submit" class="btn" onclick="myFunction()">Send</button>
+		<button type="submit" class="btn" id="send" onclick="myFunction()">Send</button>
+		
 		<div id="snackbar">Your message was sent!</div>
 
 		<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
@@ -150,6 +165,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 </div>
 
 <div class="icon-bar">
+	<a href=/home><i class="fa fa-home"></i></a>
 	<a href="/search"><i class="fa fa-search"></i></a>
 	<a href="/messages"><i class="fa fa-commenting-o"></i></a>
 	<a class="active" href="/myprofile"><i class="fa fa-user-circle"></i></a>

@@ -2,6 +2,7 @@
 
 <html>
 <head>
+  <title>Mentor</title>
   
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   
@@ -9,7 +10,9 @@
 
   <link rel="stylesheet" href="css/index.css">
 
-<h1> Mentor </h1>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lora" />
+
+<h1> mentor </h1>
 
   {{> facebook}}
   <script src="/js/facebook.js"></script>
@@ -31,7 +34,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
 </head>
 
-<body style="background-color:#56baed;">
+<body style="background-color:#8E4444;">
 
   <!------ Include the above in your HEAD tag ---------->
 
@@ -49,14 +52,14 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
         <form>
           <input type="text" id="email" class="fadeIn second" name="email" placeholder="email">
           <input type="password" id="password" class="fadeIn third" name="login" placeholder="password">
-          <input type="submit" class="fadeIn fourth" value="login" formaction="/search">
+          <input type="submit" class="fadeIn fourth" value="login" formaction="/home">
         </form>
       </div>
 
 
       <p class="facebookLogin">
-        <fb:login-button data-size="large" scope="public_profile,email" onlogin="checkLoginState()" onclick="/search.handlebars">
-      </fb:login-button>   
+        <fb:login-button size="Xlarge" scope="public_profile,email" onlogin="checkLoginState()" onclick="/home.handlebars">
+        </fb:login-button>   
     </p>
 
 

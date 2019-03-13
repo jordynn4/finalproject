@@ -1,8 +1,9 @@
 /* PAGE A */
 
-body {
+/*body {
   overflow: scroll;
   margin-left: 0px;
+  font-family: Lora;
 }
 
 
@@ -21,15 +22,15 @@ h1 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family: Lora;
 }
 
 p {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: Lora;
 }
 
 h3 {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: Lora;
   margin-right: 150px;
 }
 
@@ -38,7 +39,11 @@ h3 {
 }
 
 .mentors {
-	max-width: 320px; 
+  max-width: 320px; 
+}
+
+.mentors h3{
+  font-family: Lora;
 }
 
 
@@ -47,6 +52,7 @@ h3 {
     float: left; 
     width: 30%; 
     margin-right: 1%;
+    font-family: Lora;
 }
 .profile-img img {
     width: 100%; height: auto;
@@ -68,16 +74,19 @@ h3 {
   color: #777; 
   font: 10em;
   font-size: 15px;
+  font-family: Lora;
 }
 
 .info span { 
   font-weight: bold; 
+  font-family: Lora;
 }
 
 
 .profile-name {
   font-size: 25px;
-}
+  font-family: Lora;
+}*/
 
 
 
@@ -85,7 +94,7 @@ h3 {
 
 
 /*Back button */
-#back {
+/*#back {
   text-decoration: none;
   display: inline-block;
   padding: 8px 16px;
@@ -100,34 +109,9 @@ a:hover {
   background-color: #2874A6;
   color: white;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
+}*/
 
 
-/* Navigation Bar */
-.icon-bar {
-  width: 100%; /* Full-width */
-  background-color: #424949; /* Dark-grey background */
-  overflow: hidden; /* Overflow due to float */
-  bottom: 0;
-  position: fixed;
-  margin-left:0px;
-  height: 75px;
-}
 
-.icon-bar a {
-  float: left; /* Float links side by side */
-  text-align: center; /* Center-align text */
-  width: 33%; /* Equal width (3 icons with 33% width each = 100%) */
-  padding: 12px 0; /* Some top and bottom padding */
-  transition: all 0.3s ease; /* Add transition for hover effects */
-  color: white; /* White text color */
-  font-size: 36px; /* Increased font size */
-}
 
-.icon-bar a:hover {
-  background-color: black; /* Add a hover color */
-}
 
-.active {
-  background-color: #2874A6; /* Add an active/current color */
-}
